@@ -13,6 +13,14 @@ const registerValidation = [
     .withMessage("Password must be at least 6 characters long"),
 ];
 
+const loginValidation = [
+  body("email").isEmail().withMessage("Email is Invalid"),
+  body("password")
+    .isLength({ min: 6 })
+    .withMessage("Password must be at least 6 characters long"),
+];
+
 module.exports = {
   registerValidation,
+  loginValidation,
 };
