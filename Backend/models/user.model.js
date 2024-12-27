@@ -34,17 +34,21 @@ userSchema.methods.toJSON = function () {
   return userObject;
 };
 
+// generate token
 userSchema.methods.generateAuthToken = async function () {
   const token = jwt.sign({ _id: this._id }, process.env.JWT_SECRET, {
     expiresIn: "1d",
   });
   return token;
 };
+
+// compare password
 userSchema.methods.comparePassword = async function (plainPassword) {
   console.log(this.password);
   return await bcrypt.compare(plainPassword, this.password);
 };
 
+// hash password
 userSchema.statics.hashPassword = async function (password) {
   const salt = await bcrypt.genSalt(10);
   return bcrypt.hash(password, salt);
