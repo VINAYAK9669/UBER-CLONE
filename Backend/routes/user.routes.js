@@ -11,6 +11,7 @@ const {
   registerUser,
   loginUser,
   getUserProfile,
+  logoutUser,
 } = require("../controllers/user.controller");
 
 // * POST REQUESTS
@@ -20,5 +21,8 @@ router.post("/login", loginValidation, loginUser);
 
 // * GET REQUESTS
 router.get("/profile", authMiddleware, getUserProfile);
+
+// *Logout
+router.get("/logout", authMiddleware, logoutUser);
 
 module.exports = router;
