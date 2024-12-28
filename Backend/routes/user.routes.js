@@ -4,7 +4,7 @@ const { body } = require("express-validator");
 const {
   registerValidation,
   loginValidation,
-} = require("../validators/authValidator");
+} = require("../validators/user/userAuthValidator");
 const authMiddleware = require("../middlewares/auth.middleware");
 
 const {
