@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const { loginUser } = require("../controllers/user.controller");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
 const captainSchema = new mongoose.Schema({
   firstName: {

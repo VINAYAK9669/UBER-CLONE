@@ -48,7 +48,6 @@ const loginUser = async (req, res) => {
   }
 
   const { email, password } = req.body;
-  console.log(email, password);
 
   try {
     const user = await userModel.findOne({ email });
@@ -58,7 +57,6 @@ const loginUser = async (req, res) => {
     }
 
     const isMatch = await user.comparePassword(password);
-    console.log(isMatch);
 
     if (!isMatch) {
       return res.status(401).json({ message: "Invalid credentials" });
