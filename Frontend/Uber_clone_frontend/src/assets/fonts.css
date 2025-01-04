@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "UberFont";
+  src: url("./fonts/UberMoveMedium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UberFont";
+  src: url("./fonts/UberMoveBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UberMoveText";
+  src: url("./fonts/UberMoveTextBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UberMoveText";
+  src: url("./fonts/UberMoveTextLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UberMoveText";
+  src: url("./fonts/UberMoveTextMedium.otf") format("opentype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UberMoveText";
+  src: url("./fonts/UberMoveTextRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
