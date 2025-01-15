@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="w-screen h-16 bg-background-dark_gray text-white">
+      <nav className="w-screen h-16 bg-black text-white">
         <div className="lg:w-[1400px] mx-auto flex items-center justify-between h-full">
           {/* Left Side: Logo with Hidden Car Animation */}
           <motion.div
@@ -70,7 +70,7 @@ const NavBar = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <SignUpModal closeModal={toggleModal} />
+            <SignUpModal />
           </motion.div>
         )}
       </AnimatePresence>

@@ -11,7 +11,12 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": ".",
+
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"], // Adjust this to your source folder
   "exclude": ["node_modules"]
