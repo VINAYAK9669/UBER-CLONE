@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="w-screen h-16 bg-black text-white">
+      <nav className="w-screen h-16 bg-black text-white px-4 md:px-0">
         <div className="lg:w-[1400px] mx-auto flex items-center justify-between h-full">
           {/* Left Side: Logo with Hidden Car Animation */}
           <motion.div
